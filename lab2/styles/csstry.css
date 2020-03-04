@@ -1,0 +1,44 @@
+﻿p, h1, h2 {
+  color: red;
+  line-height: 1;
+  margin : 0;
+  text-shadow: 2px 2px 1px black;
+  text-align: center;
+}
+
+p, li, footer{
+  text-shadow: 1px 1px 4px black;
+}
+
+
+h1 {
+  letter-spacing: .1em;
+  color:blue;
+  text-shadow: 2px 2px 2px black;
+
+}
+
+h2 {
+  letter-spacing: .2em;
+  color:green;
+  text-shadow: 1px 1px 2px black;
+}
+
+body {
+  margin: 0 auto;
+  border: 5px solid blue;
+  width:500px;
+  background-color:#ADEFDE
+}
+
+html{
+  background-color:#E8E22A;
+  font-family: oswald;
+}
+
+
+
+img {
+  display: block;
+  margin: 0 auto;
+}
