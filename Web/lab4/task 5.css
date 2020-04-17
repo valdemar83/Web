@@ -1,0 +1,30 @@
+.container {
+	margin: 100px;
+}
+
+.square{
+	width: 200px;
+	height: 200px;
+	border-radius:10px;
+	background: red;
+	transition: transform 3s;
+	border: 4px double black;
+	
+	
+}
+
+.square:hover{
+	transform: scale(1.5);
+	animation: 3s infinite ChangeColor;
+	transition: all 3s ease;
+}
+
+	
+@keyframes ChangeColor{
+	0% {background:red;}
+	9%{background: orange;}
+	50% {background: yellow;}
+	91%{background: green;}
+	100% {background: blue;}
+}
+

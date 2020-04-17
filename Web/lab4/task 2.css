@@ -1,0 +1,22 @@
+.container {
+	margin: 100px;
+}
+
+.square{
+	width: 200px;
+	height: 200px;
+	border-radius:10px;
+	background: red;
+	transition: transform .5s;
+	
+}
+
+.square:hover{
+	transform: translateX(100px)
+	skew(-30deg);
+	transition: all .5s ease;
+}
+
+	
+
+

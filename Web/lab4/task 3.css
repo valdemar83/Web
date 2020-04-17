@@ -1,0 +1,34 @@
+.container {
+	margin: 100px;
+}
+
+.squareX{
+	width: 200px;
+	height: 200px;
+	border-radius:10px;
+	background: red;
+	border: 4px double black;
+	transition: transform 2s;
+	
+}
+
+.squareZ{
+	width: 200px;
+	height: 200px;
+	margin-left: 200px;
+	border-radius:10px;
+	background: blue;
+	border: 4px double yellow;
+	transition: transform 2s;
+	
+}
+
+.squareX:hover{
+	transform: rotateX(45deg);
+	transition: all 2s ease;
+}
+
+.squareZ:hover{
+	transform: rotateZ(45deg);
+	transition: all 2s ease;
+}
