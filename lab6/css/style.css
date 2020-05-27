@@ -1,0 +1,35 @@
+body {
+	margin: 0;
+	background: #C0C0C0;
+}
+
+p1 {
+	font-size: 30px;
+	text-shadow: 1px 1px 2px black, 0 0 1em red;
+}
+
+
+
+#preloader {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: #D3D3D3;
+    justify-content: center;
+    align-items: center;
+}
+
+#preloader > div {
+	border-radius: 50%;
+	height: 4vh;
+	width: 4vh;
+	background: yellow;
+	animation: scalation 0.5s infinite;
+}
+
+@keyframes scalation {
+	0%,100%  {transform: scale(4);}
+	50%      {transform: scale(0);}    	
+}
+
