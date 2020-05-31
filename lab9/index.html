@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="css.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+  <script src="https://unpkg.com/vue-gallery-slideshow@1.4.2/dist/js/vue-gallery-slideshow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+  <script src="1.js"></script>
+</head>
+  </style>
+ 
+</head>
+<body>
+    <div id="app">   
+        <p1>Input url to push photo</p1> 
+        <input type="text" ref = "pathFile"  name="pathFile" id="pathFile"/>
+        <button v-on:click="remove(pathFile)">Delete</button>
+        <button v-on:click="add($event,pathFile)">Push</button>
+        <br>
+      <img class="image" v-for="(image, i) in images" :src="image" @click="index = i">
+      <vue-gallery-slideshow :images="images" :index="index"  @close="index = null"></vue-gallery-slideshow>
+      </div>
+      <script src="1.js"></script>
+</body>
+</html>

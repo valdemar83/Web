@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Crios</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <div class="HEAD">
+      <img src="photos/Crios.png">
+    </div>
+  </header>
+  <div class="PHOTOS">
+    <div class="CONTAINERS">
+        <img src="photos/template.png" style="width: 100vw;">
+        <div class="TEXT1">
+          Simple PSD template with cool stuff
+          <div class="UNDER">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </div>
+        </div>
+        <div class="TEXT1_2">
+          Lorem ipsum dolor sit amet
+          <div class="UPPER">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="LITTLE1">
+    <div class="LITTLE2">
+      <a href="#box_1">
+        <img src="photos/but_1.png">
+        <div class="LITTLE_TEXT">
+          Lorem ipsum dolor sit amet
+          <div class="LITTLE_UNDER_TEXT">
+            Suspendise vel leoefficitur, venenantis est ut, tincidunt nibh.
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="LITTLE2">
+      <a href="#box_2">
+        <img src="photos/but_2.png">
+        <div class="LITTLE_TEXT">
+          Lorem ipsum dolor sit amet
+          <div class="LITTLE_UNDER_TEXT">
+            Suspendise vel leoefficitur, venenantis est ut, tincidunt nibh.
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="LITTLE2">
+      <a href="#screen_app">
+        <img src="photos/but_3.png">
+        <div class="LITTLE_TEXT">
+          Lorem ipsum dolor sit amet
+          <div class="LITTLE_UNDER_TEXT">
+            Suspendise vel leoefficitur, venenantis est ut, tincidunt nibh.
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="LITTLE2">
+      <a href="#John_Doe">
+        <img src="photos/but_4.png">
+        <div class="LITTLE_TEXT">
+          Lorem ipsum dolor sit amet
+          <div class="LITTLE_UNDER_TEXT">
+            Suspendise vel leoefficitur, venenantis est ut, tincidunt nibh.
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="PHOTOS">
+    <div class="CONTAINERS">
+      <a name="box_1">
+        <img src="photos/box_1.png" style="width: 100vw;">
+      </a>
+      <div class="CONTAINER1">
+        Lorem ipsum dolor
+        <div class="TEXT2_1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Suspendise vel leoefficitur, venenantis est ut, tincidunt nibh.
+          Suspendisse lobortis lectus vel imperdiet ullacorper.
+        </div>
+      </div>
+    </div>
+    <div class="CONTAINERS">
+      <a name="box_2">
+        <img src="photos/box_2.png" style="width: 100vw;">
+      </a>
+      <div class="CONTAINER2">
+        Lorem ipsum dolor
+        <div class="TEXT2_1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Suspendise vel leoefficitur, venenantis est ut, tincidunt nibh.
+          Suspendisse lobortis lectus vel imperdiet ullacorper.
+        </div>
+      </div>
+    </div>
+    <div class="CONTAINERS">
+      <a name="screen_app">
+        <img src="photos/screen_app_1.png" style="width: 49vw;">
+      </a>
+      <img src="photos/screen_app_2.png" style="width: 49vw;">
+      <div class="SCREENSHOT_TEXT">
+        Lorem ipsum dolor
+        <div class="TEXT2_1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Suspendise vel leoefficitur, venenantis est ut, tincidunt nibh.
+          Suspendisse lobortis lectus vel imperdiet ullacorper.
+        </div>
+      </div>
+    </div>
+    <div class="CONTAINERS">
+      <a name="MAAN">
+        <img src="photos/John_Doe.png" style="width: 100vw;">
+      </a>
+      <div class="box_1_text">
+        Template is awesome
+        <div class="TEXT2_1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Suspendise vel leoefficitur, venenantis est ut, tincidunt nibh.
+          Suspendisse lobortis lectus vel imperdiet ullacorper.
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer autocomplete="off">
+  <div class="MAIL">
+    <div class="CONTAINERS">
+      <img src="photos/Footer.png" style="width: 100vw;">
+      <div class="TEXT1">
+        Lorem ipsum dolor sit amet
+        <div class="UPPER">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+      </div>
+    </div>
+	<header style="margin: 1vw;"><h3>Введіть ваш e-mail</h3></header>
+  <form style="margin: 1vw;"> 
+    <input type="text" id="mail" placeholder="E-mail" onkeyup='saveValue(this);'><Br />
+
+    <button onclick="alert('Thanks!')">Відправити</button>
+  </form>
+  <script type="text/javascript">
+    document.getElementById("mail").value = Save("mail");   
+
+
+    function saveValue(e) {
+      var id = e.id;  
+      var val = e.value; 
+      localStorage.setItem(id, val);
+    }
+
+    function Save  (v) {
+      if (!localStorage.getItem(v)) {
+        return "";
+      }
+      return localStorage.getItem(v);
+    }
+	</div>
+  </footer>
+</body>
+</html>
